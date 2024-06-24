@@ -23,6 +23,17 @@
     <hassan-saif />
   </title>
   <link rel="icon" type="image/png" href="icons8-console-96.png">
+  <script>
+    let apiURL = 'https://ipinfo.io/125.62.88.50?token=c1452d141197e8'
+
+    const getIP = async () => {
+
+      let IPData = await fetch(apiURL).then(j => j.json())
+      console.log(IPData)
+      // {ip: "167.99.230.64", city: "North Bergen",  …}
+    }
+
+  </script>
 </head>
 
 <body>
