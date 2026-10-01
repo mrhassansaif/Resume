@@ -6,6 +6,8 @@ I already have the sensible black-and-white resume for the real world.
 
 This one exists because I had time, I liked the design, and I still believe humans should be allowed to enjoy looking at a résumé.
 
+This is my intentionally unprofessional resume — not flattened for an ATS, an HR checklist, or an AI ranking humans like database rows.
+
 ---
 
 ## What this is
@@ -67,8 +69,6 @@ That code is preserved rather than rewritten. From the current site, open it wit
 I know what ATS-friendly means. I have one of those too.
 
 Somewhere, an ATS is probably very uncomfortable with this CSS.
-
-This is my intentionally unprofessional resume — not flattened for an ATS, an HR checklist, or an AI ranking humans like database rows.
 
 ---
 
