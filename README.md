@@ -62,13 +62,13 @@ That code is preserved rather than rewritten. From the current site, open it wit
 
 ---
 
-## A little backchodi
+## Shenanigans? 
 
 I know what ATS-friendly means. I have one of those too.
 
 Somewhere, an ATS is probably very uncomfortable with this CSS.
 
-Made for humans. Parsed at your own risk.
+This is my intentionally unprofessional resume — not flattened for an ATS, an HR checklist, or an AI ranking humans like database rows.
 
 ---
 
@@ -154,5 +154,4 @@ Deploy by publishing the repository root on GitHub Pages. No build pipeline requ
 **Muhammad Hassan Bin Saif**
 
 - Portfolio: [mrhassansaif.github.io/my-portfolio2.0](https://mrhassansaif.github.io/my-portfolio2.0/)
-- GitHub: [mrhassansaif](https://github.com/mrhassansaif)
-- LinkedIn: [Hassan Bin Saif](https://www.linkedin.com/in/hassan-saif-908901184/)
+- LinkedIn: [Hassan Bin Saif](https://www.linkedin.com/in/mr-hassansaif/)
