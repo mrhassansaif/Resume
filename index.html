@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Righteous&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,19 +20,22 @@
 
   <div class="page">
     <main class="resume" id="main" aria-label="Resume of Muhammad Hassan Bin Saif">
-      <!-- Header -->
       <header class="resume-header">
-        <div class="portrait-wrap">
-          <img class="portrait" src="assets/images/profile-320.jpg" width="160" height="160" decoding="async"
+        <!-- Easy photo swap: replace src with your personal image (e.g. assets/images/profile.jpg). -->
+        <figure class="portrait-wrap">
+          <img
+            class="portrait"
+            src="assets/images/profile-320.jpg"
+            width="180"
+            height="180"
+            decoding="async"
             alt="Portrait of Muhammad Hassan Bin Saif">
-        </div>
+        </figure>
 
         <div class="header-copy">
-          <p class="eyebrow">Curriculum Vitae. Or Is It? <em>Probably Neither.</em> Definitely not for job applications.
-          </p>
+          <p class="eyebrow">Curriculum Vitae. Or is it? <em>Probably neither.</em> Definitely not for job applications.</p>
           <h1 class="name">Muhammad Hassan Bin Saif</h1>
-          <p class="title">Web &amp; Mobile Applications Developer <span class="title-sep" aria-hidden="true">·</span>
-            React / React Native</p>
+          <p class="title">Web &amp; Mobile Applications Developer <span class="title-sep" aria-hidden="true">·</span> React / React Native</p>
 
           <ul class="contact-bar" aria-label="Contact">
             <li>
@@ -66,21 +69,24 @@
         </div>
       </header>
 
-      <!-- Human note — restrained -->
       <aside class="human-note" aria-label="A note for human readers">
         <p>
           This is my intentionally <em>unprofessional</em> resume — not flattened for an ATS, an HR checklist, or an AI
-          ranking <em>humans</em> like database rows. I made this one for the <em>humans</em> reading it. It is not the
+          ranking humans like database rows. I made this one for the humans reading it. It is not the
           resume I use for job applications. Welcome.
         </p>
-        <p>Lore? Read Github Repo <a href="https://github.com/mrhassansaif/Resume">ReadMe</a>.</p>
+        <p class="human-note-aside">
+          Lore? The GitHub <a href="https://github.com/mrhassansaif/Resume" target="_blank" rel="noopener noreferrer">README</a> has the story.
+        </p>
       </aside>
 
       <div class="resume-body">
-        <!-- Main column -->
         <div class="col-main">
-          <section class="section" aria-labelledby="summary-heading">
-            <h2 id="summary-heading" class="section-title">Summary</h2>
+          <section class="section accent-pink" aria-labelledby="summary-heading">
+            <h2 id="summary-heading" class="section-title">
+              <svg class="sec-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 12c2.7 0 5-2.3 5-5s-2.3-5-5-5-5 2.3-5 5 2.3 5 5 5zm0 2c-3.3 0-10 1.7-10 5v3h20v-3c0-3.3-6.7-5-10-5z"/></svg>
+              Summary
+            </h2>
             <p class="lede">
               Web &amp; Mobile Applications Developer focused on React.js and React Native.
               I build and improve web apps, work with teams to ship clean user-facing features,
@@ -93,8 +99,11 @@
             </p>
           </section>
 
-          <section class="section" aria-labelledby="experience-heading">
-            <h2 id="experience-heading" class="section-title">Work Experience</h2>
+          <section class="section accent-pink" aria-labelledby="experience-heading">
+            <h2 id="experience-heading" class="section-title">
+              <svg class="sec-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M6 8V6h3V4H6C4.9 4 4 4.9 4 6v2H2v2h2v8c0 1.1.9 2 2 2h3v-2H6V10h3V8H6zm16 0h-2V6c0-1.1-.9-2-2-2h-3v2h3v2h-3v2h3v8h-3v2h3c1.1 0 2-.9 2-2v-8h2V8zM9.5 11.5 8 13l4 4 8-8-1.5-1.5L12 14l-2.5-2.5z"/></svg>
+              Work Experience
+            </h2>
 
             <article class="entry">
               <header class="entry-head">
@@ -151,8 +160,11 @@
             </article>
           </section>
 
-          <section class="section" aria-labelledby="education-heading">
-            <h2 id="education-heading" class="section-title">Education</h2>
+          <section class="section accent-green" aria-labelledby="education-heading">
+            <h2 id="education-heading" class="section-title">
+              <svg class="sec-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3 1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
+              Education
+            </h2>
 
             <article class="entry">
               <header class="entry-head">
@@ -168,8 +180,11 @@
             </article>
           </section>
 
-          <section class="section" aria-labelledby="certs-heading">
-            <h2 id="certs-heading" class="section-title">Certifications &amp; Training</h2>
+          <section class="section accent-green" aria-labelledby="certs-heading">
+            <h2 id="certs-heading" class="section-title">
+              <svg class="sec-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 2 9.2 8.6 2 9.2l5.5 4.8L5.8 21 12 17.3 18.2 21l-1.7-7L22 9.2l-7.2-.6L12 2z"/></svg>
+              Certifications &amp; Training
+            </h2>
 
             <ul class="cert-list">
               <li>
@@ -205,8 +220,11 @@
             </ul>
           </section>
 
-          <section class="section" aria-labelledby="portfolio-heading">
-            <h2 id="portfolio-heading" class="section-title">Portfolio</h2>
+          <section class="section accent-blue" aria-labelledby="portfolio-heading">
+            <h2 id="portfolio-heading" class="section-title">
+              <svg class="sec-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M17 3H7c-1.1 0-2 .9-2 2v16l7-3 7 3V5c0-1.1-.9-2-2-2z"/></svg>
+              Portfolio
+            </h2>
             <ul class="link-cards">
               <li>
                 <a href="https://mrhassansaif.github.io/my-portfolio2.0/" target="_blank" rel="noopener noreferrer">
@@ -224,10 +242,12 @@
           </section>
         </div>
 
-        <!-- Sidebar -->
         <aside class="col-side" aria-label="Profile details">
-          <section class="side-block" aria-labelledby="skills-heading">
-            <h2 id="skills-heading" class="side-title">Skills</h2>
+          <section class="side-block accent-pink" aria-labelledby="skills-heading">
+            <h2 id="skills-heading" class="side-title">
+              <svg class="sec-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="m9.4 16.6-4.2-4.2L4 13.6l5.4 5.4 12-12L20.2 6 9.4 16.6zM8 4h2v2H8V4zm4 0h2v2h-2V4zm4 0h2v2h-2V4zM4 8h2v2H4V8zm0 4h2v2H4v-2z"/></svg>
+              Skills
+            </h2>
             <ul class="skill-list">
               <li>
                 <div class="skill-row"><span>HTML5 / CSS3 / Bootstrap</span><span class="skill-val"
@@ -292,8 +312,11 @@
             </ul>
           </section>
 
-          <section class="side-block" aria-labelledby="personal-heading">
-            <h2 id="personal-heading" class="side-title">Personal</h2>
+          <section class="side-block accent-pink" aria-labelledby="personal-heading">
+            <h2 id="personal-heading" class="side-title">
+              <svg class="sec-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+              Personal
+            </h2>
             <dl class="facts">
               <div>
                 <dt>Date of birth</dt>
@@ -314,26 +337,33 @@
             </dl>
           </section>
 
-          <section class="side-block" aria-labelledby="interests-heading">
-            <h2 id="interests-heading" class="side-title">Interests</h2>
+          <section class="side-block interests-block accent-pink" aria-labelledby="interests-heading">
+            <h2 id="interests-heading" class="side-title">
+              <svg class="sec-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M12 21.35 10.55 20.03C5.4 15.36 2 12.27 2 8.5 2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+              Interests
+            </h2>
+            <p class="interests-lede">Off the clock, roughly:</p>
             <ul class="interest-grid">
-              <li title="Coffee">Coffee</li>
-              <li title="Coding">Coding</li>
-              <li title="Football">Football</li>
-              <li title="Gaming">Gaming</li>
-              <li title="Music">Music</li>
-              <li title="Linux">Linux</li>
-              <li title="Cycling">Cycling</li>
-              <li title="Television">Television</li>
-              <li title="Cooking">Cooking</li>
-              <li title="Video">Video</li>
-              <li title="Photography">Photography</li>
-              <li title="Fitness">Fitness</li>
+              <li>Coffee</li>
+              <li>Coding</li>
+              <li>Football</li>
+              <li>Gaming</li>
+              <li>Music</li>
+              <li>Linux</li>
+              <li>Cycling</li>
+              <li>Television</li>
+              <li>Cooking</li>
+              <li>Video</li>
+              <li>Photography</li>
+              <li>Fitness</li>
             </ul>
           </section>
 
-          <section class="side-block" aria-labelledby="social-heading">
-            <h2 id="social-heading" class="side-title">Social</h2>
+          <section class="side-block accent-blue" aria-labelledby="social-heading">
+            <h2 id="social-heading" class="side-title">
+              <svg class="sec-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M3.9 12c0-1.7 1.4-3.1 3.1-3.1h4V7H7c-2.8 0-5 2.2-5 5s2.2 5 5 5h4v-1.9H7c-1.7 0-3.1-1.4-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.7 0 3.1 1.4 3.1 3.1s-1.4 3.1-3.1 3.1h-4V17h4c2.8 0 5-2.2 5-5s-2.2-5-5-5z"/></svg>
+              Social
+            </h2>
             <ul class="social-list">
               <li>
                 <a href="https://www.linkedin.com/in/hassan-saif-908901184/" target="_blank" rel="noopener noreferrer">
