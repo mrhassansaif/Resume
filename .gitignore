@@ -31,3 +31,4 @@ pnpm-lock.yaml
 .cache/
 dist/
 build/
+content/
