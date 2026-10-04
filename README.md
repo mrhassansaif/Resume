@@ -1,4 +1,4 @@
-# The Unprofessional Resume
+# The Human-First Resume
 
 > A resume designed to please the human eyes.
 
@@ -6,13 +6,13 @@ I already have the sensible black-and-white resume for the real world.
 
 This one exists because I had time, I liked the design, and I still believe humans should be allowed to enjoy looking at a résumé.
 
-This is my intentionally unprofessional resume — not flattened for an ATS, an HR checklist, or an AI ranking humans like database rows.
+This is my resume, for humans — not flattened for an ATS, an HR checklist, or an AI ranking humans like database rows.
 
 ---
 
 ## What this is
 
-This repository hosts my **Unprofessional Resume** — a creative, visual web version of my résumé made primarily for **people**, not parsers.
+This repository hosts my **Human-First Resume** — a creative, visual web version of my résumé made primarily for **HUMANS**, not parsers.
 
 It is intentionally more visual, colorful, and personality-driven than the plain ATS-friendly document I use when applying for jobs.
 
@@ -150,5 +150,5 @@ Then visit the local URL it prints (usually `http://localhost:3000`).
 
 **Muhammad Hassan Bin Saif**
 
-- Portfolio: [<HassanSaif />](https://hassansaif.vercel.app/)
-- LinkedIn: [Hassan Bin Saif](https://www.linkedin.com/in/mr-hassansaif/)
+- Portfolio: [< HassanSaif />](https://hassansaif.vercel.app/)
+- LinkedIn: [M. Hassan Bin Saif](https://www.linkedin.com/in/mr-hassansaif/)
