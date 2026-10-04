@@ -341,14 +341,65 @@ button:focus-visible {
 }
 
 .col-side {
-  padding: 1.85rem 1.75rem 2rem;
+  padding: 1.5rem 1.35rem 1.75rem;
   background: var(--sidebar);
+}
+
+/* ---------- Sidebar section system ---------- */
+
+.col-side .side-block + .side-block {
+  margin-top: 1.25rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--rule);
+}
+
+.col-side .side-title {
+  margin: 0 0 0.85rem;
+  font-size: 1.05rem;
+  gap: 0.55rem;
+  padding-bottom: 0.55rem;
+  border-bottom: 1px solid var(--rule);
+  position: relative;
+  text-shadow: none;
+}
+
+.col-side .side-block:first-child .side-title {
+  font-size: 1.12rem;
+}
+
+.col-side .side-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 2.4rem;
+  height: 2px;
+  background: var(--pink);
+  border-radius: 2px;
+}
+
+.col-side .accent-blue .side-title::after {
+  background: var(--blue);
+}
+
+.col-side .sec-icon {
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.col-side .accent-pink .sec-icon,
+.col-side .accent-pink .fact-icon {
+  color: var(--pink);
+}
+
+.col-side .accent-blue .sec-icon,
+.col-side .accent-blue .social-icon {
+  color: var(--blue);
 }
 
 /* ---------- Sections ---------- */
 
-.section + .section,
-.side-block + .side-block {
+.section + .section {
   margin-top: 1.85rem;
   padding-top: 1.55rem;
   border-top: 1px solid var(--rule);
@@ -591,61 +642,78 @@ button:focus-visible {
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 0.72rem;
+  gap: 0.48rem;
 }
 
 .skill-group + .skill-group {
-  margin-top: 1.15rem;
-  padding-top: 1rem;
+  margin-top: 0.9rem;
+  padding-top: 0.8rem;
   border-top: 1px dashed var(--rule);
 }
 
 .skill-group-title {
-  margin: 0 0 0.55rem;
+  margin: 0 0 0.45rem;
   font-family: var(--font-title);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 400;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--pink-soft);
+  color: var(--muted);
 }
 
 .skill-chips {
   list-style: none;
-  margin: 0.7rem 0 0;
+  margin: 0.55rem 0 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.32rem;
+}
+
+.skill-group-title + .skill-chips {
+  margin-top: 0;
+}
+
+.skill-row > span:first-child {
+  font-weight: 600;
 }
 
 .skill-chips li {
-  padding: 0.28rem 0.58rem;
-  font-size: 0.78rem;
-  color: var(--ink);
-  border: 1px solid rgba(220, 52, 145, 0.3);
-  background: rgba(220, 52, 145, 0.08);
+  padding: 0.18rem 0.48rem;
+  font-size: 0.72rem;
+  line-height: 1.3;
+  color: var(--muted);
+  border: 1px solid rgba(227, 225, 232, 0.12);
+  background: rgba(255, 255, 255, 0.03);
   border-radius: 999px;
+}
+
+.skill-chips-emphasis li {
+  color: var(--ink);
+  border-color: rgba(220, 52, 145, 0.28);
+  background: rgba(220, 52, 145, 0.07);
 }
 
 .skill-row {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   gap: 0.75rem;
-  font-size: 0.9rem;
+  font-size: 0.84rem;
   color: var(--ink-soft);
 }
 
 .skill-val {
   color: var(--pink-soft);
   font-variant-numeric: tabular-nums;
-  font-size: 0.82rem;
+  font-size: 0.72rem;
   font-weight: 700;
+  letter-spacing: 0.02em;
 }
 
 .meter {
-  margin-top: 0.32rem;
-  height: 11px;
+  margin-top: 0.22rem;
+  height: 8px;
   background: var(--meter-track);
   border-radius: 999px;
   overflow: hidden;
@@ -665,7 +733,7 @@ button:focus-visible {
     transparent 75%,
     transparent
   );
-  background-size: 16px 16px;
+  background-size: 12px 12px;
   border-radius: inherit;
   animation: meter-grow 700ms ease both, stripes 1s linear infinite;
 }
@@ -689,48 +757,73 @@ button:focus-visible {
 
 @keyframes stripes {
   from {
-    background-position: 16px 0;
+    background-position: 12px 0;
   }
   to {
     background-position: 0 0;
   }
 }
 
-.facts {
-  margin: 0;
-  display: grid;
-  gap: 0.85rem;
-}
+/* ---------- Personal ---------- */
 
 .personal-blurb {
-  margin: 0 0 0.9rem;
-  font-size: 0.9rem;
+  margin: 0 0 0.7rem;
+  font-size: 0.84rem;
   font-style: italic;
-  line-height: 1.5;
+  line-height: 1.45;
   color: var(--muted);
 }
 
-.facts div {
-  padding: 0.55rem 0.7rem;
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 8px;
-  border: 1px solid var(--rule);
+.fact-rows {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.4rem;
 }
 
-.facts dt {
-  margin: 0;
-  font-size: 0.7rem;
-  letter-spacing: 0.14em;
+.fact-rows li {
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+  gap: 0.55rem;
+  align-items: start;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.fact-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.12rem;
+  flex-shrink: 0;
+  color: var(--pink);
+}
+
+.fact-label {
+  display: block;
+  font-family: var(--font-title);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--pink);
-  font-weight: 700;
-  font-family: var(--font-title);
+  margin-bottom: 0.1rem;
 }
 
-.facts dd {
-  margin: 0.2rem 0 0;
+.fact-value {
+  display: block;
+  font-size: 0.86rem;
   color: var(--ink-soft);
-  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.lang-panel {
+  margin-top: 0.55rem;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
 }
 
 .lang-list {
@@ -738,14 +831,14 @@ button:focus-visible {
   margin: 0.35rem 0 0;
   padding: 0;
   display: grid;
-  gap: 0.28rem;
+  gap: 0.22rem;
 }
 
 .lang-list li {
   display: flex;
   justify-content: space-between;
   gap: 0.75rem;
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   color: var(--muted);
 }
 
@@ -754,9 +847,11 @@ button:focus-visible {
   font-weight: 600;
 }
 
+/* ---------- Interests ---------- */
+
 .interests-lede {
-  margin: -0.35rem 0 0.7rem;
-  font-size: 0.86rem;
+  margin: -0.15rem 0 0.55rem;
+  font-size: 0.8rem;
   font-style: italic;
   color: var(--muted);
 }
@@ -765,18 +860,22 @@ button:focus-visible {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: grid;
-  gap: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.38rem;
 }
 
 .interest-grid li {
-  display: grid;
-  gap: 0.12rem;
-  padding: 0.55rem 0.7rem;
+  padding: 0.32rem 0.62rem;
+  font-family: var(--font-title);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--ink);
   border: 1px solid rgba(220, 52, 145, 0.35);
   background: rgba(220, 52, 145, 0.08);
-  border-radius: 10px;
+  border-radius: 999px;
   transition: transform var(--ease), border-color var(--ease), background var(--ease);
+  cursor: default;
 }
 
 .interest-grid li:nth-child(3n) {
@@ -794,60 +893,50 @@ button:focus-visible {
   border-color: var(--pink);
 }
 
-.interest-label {
-  font-family: var(--font-title);
-  font-size: 0.88rem;
-  letter-spacing: 0.02em;
-  color: var(--ink);
-}
-
-.interest-hint {
-  font-size: 0.78rem;
-  font-style: italic;
-  color: var(--muted);
-}
+/* ---------- Social ---------- */
 
 .social-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 0.45rem;
+  gap: 0.35rem;
 }
 
 .social-list a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.65rem 0.55rem;
+  gap: 0.65rem;
+  padding: 0.48rem 0.55rem;
   text-decoration: none;
   color: var(--ink);
   border: 1px solid var(--rule);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.02);
   font-weight: 600;
-  font-size: 0.92rem;
+  font-size: 0.86rem;
   position: relative;
-  min-height: 2.75rem;
+  min-height: 2.4rem;
   transition: border-color var(--ease), background var(--ease), color var(--ease);
 }
 
 .social-list a::before {
   content: "";
   position: absolute;
-  inset: -0.15rem;
+  inset: -0.1rem;
 }
 
 .social-main {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.42rem;
+  min-width: 0;
 }
 
 .social-icon {
-  width: 1.05rem;
-  height: 1.05rem;
+  width: 1rem;
+  height: 1rem;
   color: var(--blue);
   flex-shrink: 0;
 }
@@ -855,9 +944,10 @@ button:focus-visible {
 .social-handle {
   color: var(--muted);
   font-weight: 400;
-  font-size: 0.82rem;
+  font-size: 0.74rem;
   overflow-wrap: anywhere;
   text-align: right;
+  max-width: 55%;
 }
 
 .social-list a:hover {
@@ -1013,12 +1103,22 @@ button:focus-visible {
   .social-list a {
     flex-wrap: wrap;
     align-items: flex-start;
+    min-height: 2.75rem;
   }
 
   .social-handle {
     text-align: left;
     width: 100%;
-    padding-left: 1.5rem;
+    max-width: none;
+    padding-left: 1.42rem;
+  }
+
+  .fact-rows li {
+    padding: 0.5rem 0.6rem;
+  }
+
+  .interest-grid {
+    gap: 0.42rem;
   }
 
   .human-note {
@@ -1124,7 +1224,8 @@ button:focus-visible {
   .col-side,
   .goal,
   .link-cards a,
-  .facts div,
+  .fact-rows li,
+  .lang-panel,
   .interest-grid li,
   .skill-chips li,
   .social-list a {
@@ -1143,7 +1244,7 @@ button:focus-visible {
   .section-title,
   .side-title,
   .skill-row,
-  .facts dd,
+  .fact-value,
   .bullets,
   .cert-main strong,
   .link-label,

@@ -102,7 +102,7 @@ Open `index.html`, or serve the repo root as a static site.
 
 ```text
 Resume/
-├── index.html                 # Current unprofessional resume
+├── index.html                 # Current Human-First resume
 ├── README.md
 ├── .gitignore
 ├── css/
@@ -143,9 +143,6 @@ Then visit the local URL it prints (usually `http://localhost:3000`).
 ## GitHub Pages
 
 - **Live:** [https://mrhassansaif.github.io/Resume/](https://mrhassansaif.github.io/Resume/)
-- **Repository:** [https://github.com/mrhassansaif/Resume](https://github.com/mrhassansaif/Resume)
-
-Deploy by publishing the repository root on GitHub Pages. No build pipeline required.
 
 ---
 
@@ -153,5 +150,5 @@ Deploy by publishing the repository root on GitHub Pages. No build pipeline requ
 
 **Muhammad Hassan Bin Saif**
 
-- Portfolio: [mrhassansaif.github.io/my-portfolio2.0](https://mrhassansaif.github.io/my-portfolio2.0/)
+- Portfolio: [<HassanSaif />](https://hassansaif.vercel.app/)
 - LinkedIn: [Hassan Bin Saif](https://www.linkedin.com/in/mr-hassansaif/)
